@@ -7,20 +7,12 @@ import PropTypes from "prop-types";
 
 const TdEvent = styled(Td)`
   border: 2px solid ${props => props.theme.calendar_border};
-
-  ${({selected}) =>
-          selected &&
-          `background-color:#b3b7ff;`}
+  background-color: ${props => props.selected && props.theme.selected_time_color};
 `;
 
 const TdEventActive = styled(TdEvent)`
-  background-color: #ebecff;
+  background-color: ${props => props.theme.active_time_color};
   cursor: pointer;
-
-  ${({selected}) =>
-          selected &&
-          `background-color:#b3b7ff ;`
-  }
 `;
 
 const Times = ( props ) => {
