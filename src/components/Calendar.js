@@ -59,7 +59,7 @@ function Calendar () {
     };
 
     const createEvent = () => {
-        let input_string = window.prompt('Enter event time: YYYY-MM-DDTHH:mm:ss',"2021-07-07T13:00:00");
+        let input_string = window.prompt('Enter event time: YYYY-MM-DDTHH:mm:ss',"2021-07-08T13:00:00");
         let new_event = moment(input_string, 'YYYY-MM-DDTHH:mm:ss', true);
 
         if (new_event.isValid()) {
